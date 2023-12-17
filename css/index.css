@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEF0E5;
+}
+
+header {
+    background-color: #163020;
+    color: #EEF0E5;
+    text-align: center;
+    align-items: center;
+}
+
+.header-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+}
+
+table button {
+    background-color: #304D30;
+    color: #EEF0E5;
+    margin-left: 200px;
+    padding: 8px 70px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+table button:hover {
+    background-color: #B6C4B6;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table tbody {
+    width: 30%;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+table td img {
+    width: 200px; 
+    border-radius: 5px;
+}
+table td img:hover {
+    width: 220px; 
+}
+
+#adminButton {
+    background-color: #304D30;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#adminButton:hover {
+    background-color: #B6C4B6;
+}
+
+

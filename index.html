@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/view.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="source/wonderfuli.png" alt="" style="height: 200px;">
+            <h1>Indonesia</h1>
+            <h3>Indonesia Adalah Negeri Terkaya Di Alam semesta</h3>
+            <p>Indonesia, sebagai negara kepulauan terbesar di dunia, dapat diakui sebagai surga kuliner dengan kekayaan ragam makanan yang menggoda selera. Dari ujung barat hingga timur, setiap daerah di Indonesia menawarkan keunikan kuliner yang mencerminkan keanekaragaman budaya dan bahan lokal. Mulai dari rendang yang lezat dari Padang, sate yang gurih dari Madura, hingga nasi goreng yang menggoda dari Jawa, Indonesia menawarkan warisan kuliner yang berlimpah. Keberagaman ini tercermin dalam penggunaan rempah-rempah khas, seperti kunyit, kemiri, dan serai, yang memberikan sentuhan istimewa pada masakan Indonesia. Selain itu, kekayaan laut Indonesia juga menciptakan hidangan seafood yang lezat dan menggugah selera. Keseluruhan, Indonesia tidak hanya membanggakan keindahan alamnya, tetapi juga menjadi destinasi kuliner yang menarik bagi pecinta makanan di seluruh dunia.</p>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <table id="TableMakanan">
+            <tbody style="width: 30%;">
+                
+            </tbody>
+        </table>
+    </div>
+    <button id="adminButton">Edit Data</button>
+    
+    <script>
+        var adminButton = document.getElementById('adminButton');
+        adminButton.addEventListener('click', function() {
+            window.location.href = 'administrator.html';
+        });
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

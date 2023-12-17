@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/administrator.css">
+    <title>Page Administrator</title>
+</head>
+<body>
+    <header>
+        <h1>Data Makanan</h1>
+    </header>
+
+    <div class="container">
+        <form id="FormMakanan" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nama">Nama Makanan:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="penjelasan">Penjelasan Makanan:</label>
+                <input type="text" id="penjelasan" name="penjelasan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="jenis">Jenis:</label>
+                <select id="jenis" name="jenis">
+                    <option value="Makanan Ringan">Makanan Ringan</option>
+                    <option value="Makanan Berat">Makanan Berat</option>
+                    <option value="Minuman">Minuman</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <div class="radio-group">
+                    <input type="radio" id="rating1" name="rating" value="1"> 1
+                    <input type="radio" id="rating2" name="rating" value="2"> 2
+                    <input type="radio" id="rating3" name="rating" value="3"> 3
+                    <input type="radio" id="rating4" name="rating" value="4"> 4
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <div class="button-group">
+                <button type="reset" id="resetFormButton">Reset Form</button>
+                <button type="submit" id="tambahDataButton">Tambah Data</button>
+            </div>
+        </form>
+
+        <table id="TableMakanan">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>Penjelasan</th>
+                    <th>Jenis</th>
+                    <th>Rating</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <button id="adminButton">Home</button>
+    
+    <script>
+        var adminButton = document.getElementById('adminButton');
+        adminButton.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="js/administrator.js"></script>
+</body>
+</html>
